@@ -1,6 +1,6 @@
-# Makf-Sr: Multi-Agent Adaptive Kalman Filtering-Based Successor Representations
+# AKF-SR: Adaptive Kalman filtering-based successor representation
 
-his is the code for implementing the MADDPG algorithm presented in the paper Makf-Sr: Multi-Agent Adaptive Kalman Filtering-Based Successor Representations (): 
+This is the code for implementing the MADDPG algorithm presented in the paper [AKF-SR: Adaptive Kalman filtering-based successor representation] (https://arxiv.org/pdf/2204.00049.pdf): 
 ## 
 
 # Paper Citation:
