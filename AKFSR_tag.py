@@ -11,7 +11,7 @@ import os
 from numpy import inf
 
 # Train
-class TrainAKFSR(MAAKFSR):
+class TrainAKFSR(AKFSR):
     def __init__(self, env, Sigma, Mu, initial_theta, episodes=10, number_samples=200, gamma=0.95,
                  checkpoint_interval=20, csv_filename_prefix='../save/statistics-MAAKFSR_1v1-Train'):
         MAAKFSR.__init__(self, env, observation=None, Sigma=None, Mu=None)
