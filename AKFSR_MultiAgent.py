@@ -12,7 +12,7 @@ mp.dps = 300
 # state_sizes = [env.observation_space[i].shape[0] for i in range(env.n)]
 # print(state_sizes)
 
-class MAAKFSR:
+class AKFSR:
     def __init__(self, env, observation, Sigma, Mu):
         self.observation = observation
         self.Sigma = Sigma
@@ -161,44 +161,6 @@ class MAAKFSR:
 
         return Final_action, phi_current, g_final
 
-
-# Test
-# from kalman_algorithms.MAMMKTD_simple1v1_initials import Mu, Sigma
-# from kalman_algorithms.MAMMKTD_1v2_initials import Mu, Sigma
-#
-# env = make_env("simple_tag_guided_1v2", False)
-# # env = make_env("simple_tag_guided", False)
-# n_actions = [env.action_space[i].n for i in range(env.n)]
-# state_sizes = [env.observation_space[i].shape[0] for i in range(env.n)]
-# observation = env.reset()
-#
-# for agent in range(env.n):
-#     print("######################################")
-#     g_final, phi_current, Final_action = MAMMKTD(env, observation, Sigma, Mu).Policy_Logic(agent)
-#     print("g_final SHAPE: ", g_final.shape)
-#     print("g_final: ", g_final)
-#     print("phi_current SHAPE: ", phi_current.shape)
-#     print("phi_current: ", phi_current)
-#     print("Final_action: ", Final_action)
-#
-#
-#
-# features_list = []
-# features_next_list = []
-# actions = []
-# actions_onehot = []
-# for i in range(env.n):
-#     action = MAMMKTD(env, observation, Sigma, Mu).choose_action()
-#     print(action)
-#     speed = 0.9 if env.agents[i].adversary else 1
-#     onehot_action = np.zeros(n_actions[i])
-#     onehot_action[action] = speed
-#     actions_onehot.append(onehot_action)
-#     actions.append(action)
-#
-# print(actions_onehot)
-# print(actions)
-#
 # State_next, reward, done, info = env.step(actions_onehot)
 # for agent in range(env.n):
 #     print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
