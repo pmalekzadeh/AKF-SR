@@ -1,13 +1,14 @@
 # AKF-SR: Adaptive Kalman filtering-based successor representation
 
-This is the code for implementing the AKF-SR algorithm presented in the paper [AKF-SR: Adaptive Kalman filtering-based successor representation] (https://arxiv.org/pdf/2204.00049.pdf): 
+This is the code for implementing the AKF-SR algorithm presented in the paper [AKF-SR: Adaptive Kalman filtering-based successor representation] (https://arxiv.org/pdf/2204.00049.pdf).
+
 ## Code Structure
 ```
 AKF-SR Codebase
+│   AKFSR.py - AKF-SR model
 │   AKFSR_tag.py - Run the AKFSR model
 |   make_env.py - Make the environment
-│   AKFSR.py - AKFSR model
-│   AKFSR_initial.py - Initialize parameters of AKFSR
+│   AKFSR_initial.py - Initialize AKF-SR's parameters
 
 ```
 
