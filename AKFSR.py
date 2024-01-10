@@ -161,7 +161,4 @@ class AKFSR:
 
         return Final_action, phi_current, g_final
 
-# State_next, reward, done, info = env.step(actions_onehot)
-# for agent in range(env.n):
-#     print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
-#     print(MAMMKTD(env, State_next, Sigma, Mu).Policy_Logic(agent))
+
