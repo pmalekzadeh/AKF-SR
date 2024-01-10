@@ -13,12 +13,13 @@ AKF-SR Codebase
 
 ### Paper Citation:
 ```
-@inproceedings{salimibeni2021makf,
-  title={Makf-Sr: Multi-Agent Adaptive Kalman Filtering-Based Successor Representations},
-  author={Salimibeni, Mohammad and Malekzadeh, Parvin and Mohammadi, Arash and Spachos, Petros and Plataniotis, Konstantinos N},
-  booktitle={ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-  pages={8037--8041},
-  year={2021},
-  organization={IEEE}
+@article{malekzadeh2022akf,
+  title={AKF-SR: Adaptive Kalman filtering-based successor representation},
+  author={Malekzadeh, Parvin and Salimibeni, Mohammad and Hou, Ming and Mohammadi, Arash and Plataniotis, Konstantinos N},
+  journal={Neurocomputing},
+  volume={467},
+  pages={476--490},
+  year={2022},
+  publisher={Elsevier}
 }
 ```
