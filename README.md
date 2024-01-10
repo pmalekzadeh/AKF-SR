@@ -27,3 +27,7 @@ AKF-SR Codebase
   publisher={Elsevier}
 }
 ```
+
+## Credits
+
+* The implementation of the multiagent environment is from [OpenAI](https://github.com/openai/multiagent-particle-envs).
