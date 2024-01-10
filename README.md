@@ -12,6 +12,7 @@ AKF-SR Codebase
 ```
 
 ### Paper Citation:
+```
 @inproceedings{salimibeni2021makf,
   title={Makf-Sr: Multi-Agent Adaptive Kalman Filtering-Based Successor Representations},
   author={Salimibeni, Mohammad and Malekzadeh, Parvin and Mohammadi, Arash and Spachos, Petros and Plataniotis, Konstantinos N},
@@ -20,3 +21,4 @@ AKF-SR Codebase
   year={2021},
   organization={IEEE}
 }
+```
