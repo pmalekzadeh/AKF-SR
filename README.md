@@ -7,7 +7,7 @@ Implementation of the AKF-SR algorithm presented in the paper [AKF-SR: Adaptive 
 AKF-SR Codebase
 │   AKFSR.py - AKF-SR model
 │   AKFSR_tag.py - Run the AKFSR model
-|   make_env.py - Make the environment
+|   make_env.py - Create the environment by importing a multiagent environment as an OpenAI Gym-like object
 │   AKFSR_initial.py - Initialize AKF-SR's parameters
 │   general_utilities.py - utilities required for AKFSR_tag.py
 │   simple_tag_utilities.py- utilities required for the environment
