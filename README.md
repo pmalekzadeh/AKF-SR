@@ -1,6 +1,6 @@
 # AKF-SR: Adaptive Kalman filtering-based successor representation
 
-This is the code for implementing the AKF-SR algorithm presented in the paper [AKF-SR: Adaptive Kalman filtering-based successor representation] (https://arxiv.org/pdf/2204.00049.pdf).
+Implementation of the AKF-SR algorithm presented in the paper [AKF-SR: Adaptive Kalman filtering-based successor representation](https://arxiv.org/pdf/2204.00049.pdf) to play tag in OpenAI's [multi-agent particle environment](https://github.com/openai/multiagent-particle-envs).
 
 ## Code Structure
 ```
@@ -9,10 +9,13 @@ AKF-SR Codebase
 │   AKFSR_tag.py - Run the AKFSR model
 |   make_env.py - Make the environment
 │   AKFSR_initial.py - Initialize AKF-SR's parameters
+│   general_utilities.py - utilities required for AKFSR_tag.py
+│   simple_tag_utilities.py- utilities required for the environment
+
 
 ```
 
-### Paper Citation:
+## Paper Citation:
 ```
 @article{malekzadeh2022akf,
   title={AKF-SR: Adaptive Kalman filtering-based successor representation},
