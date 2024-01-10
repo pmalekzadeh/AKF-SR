@@ -9,8 +9,8 @@ AKF-SR Codebase
 │   AKFSR_tag.py - Run the AKFSR model
 |   make_env.py - Create the environment by importing a multiagent environment as an OpenAI Gym-like object
 │   AKFSR_initial.py - Initialize AKF-SR's parameters
-│   general_utilities.py - utilities required for AKFSR_tag.py
-│   simple_tag_utilities.py- utilities required for the environment
+│   general_utilities.py - Utilities required for  directory creation, JSON data dumping, and managing time-series data in AKFSR_tag.py 
+│   simple_tag_utilities.py- Utilities required for the environment
 
 
 ```
