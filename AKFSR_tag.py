@@ -1,6 +1,6 @@
 import AKFSR
 # To test the 1v2 environment
-from Multi_Agent_SR.AKFSR_simple1v2_initials import Mu, Sigma
+from AKFSR_initial import Mu, Sigma
 from numpy.linalg import inv
 import numpy as np
 import argparse
