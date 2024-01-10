@@ -13,8 +13,8 @@ from numpy import inf
 # Train
 class TrainAKFSR(AKFSR):
     def __init__(self, env, Sigma, Mu, initial_theta, episodes=10, number_samples=200, gamma=0.95,
-                 checkpoint_interval=20, csv_filename_prefix='../save/statistics-MAAKFSR_1v1-Train'):
-        MAAKFSR.__init__(self, env, observation=None, Sigma=None, Mu=None)
+                 checkpoint_interval=20, csv_filename_prefix='../save/statistics-AKFSR_1v1-Train'):
+        AKFSR.__init__(self, env, observation=None, Sigma=None, Mu=None)
         self.env = env
         self.Sigma = Sigma
         self.Mu = Mu
@@ -95,7 +95,7 @@ class TrainAKFSR(AKFSR):
                 # for t in range(self.number_samples):
                 done = [False, False]
                 while not any(done):
-                    act_test, Phi_current, g = MAAKFSR(self.env, State_k, self.Sigma, self.Mu).Policy_Logic(agent)
+                    act_test, Phi_current, g = AKFSR(self.env, State_k, self.Sigma, self.Mu).Policy_Logic(agent)
 
                     # env.render()
                     # action
@@ -216,9 +216,9 @@ if __name__ == '__main__':
     parser.add_argument('--benchmark', default=False, action="store_true")
     parser.add_argument('--experiment_prefix', default="..",
                         help="directory to store all experiment data")
-    parser.add_argument('--weights_filename_prefix', default='/save/tag-MAAKFSR_1v1',
+    parser.add_argument('--weights_filename_prefix', default='/save/tag-AKFSR_1v1',
                         help="where to store/load network weights")
-    parser.add_argument('--csv_filename_prefix', default='../save/statistics-MAAKFSR_1v1',
+    parser.add_argument('--csv_filename_prefix', default='../save/statistics-AKFSR_1v1',
                         help="where to store statistics")
     parser.add_argument('--checkpoint_interval', default=10,
                         help="how often to checkpoint")
@@ -277,7 +277,7 @@ if __name__ == '__main__':
         while not any(_done):
             _step += 1
             for _agent in range(env.n):
-                action_test, _phi_current, g = MAAKFSR(env, _State_k, Sigma, Mu).Policy_Logic(_agent)
+                action_test, _phi_current, g = AKFSR(env, _State_k, Sigma, Mu).Policy_Logic(_agent)
 
                 if args.render:
                     env.render()
